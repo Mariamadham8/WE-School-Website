@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Booking - WE School</title><link rel="stylesheet" href="style.css"></head><body>
+<nav class="navbar"><div class="logo"><img src="images/logo.svg" alt="WE School Logo"></div><ul><li><a href="index.html">Home</a></li><li><a href="login.html">Login</a></li><li><a href="registration.html">Register</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+<div class="form-container"><h2>Course Booking</h2><form onsubmit="event.preventDefault();alert('Booking submitted successfully!')">
+<label>Student Name</label><input type="text" placeholder="Enter your name" required>
+<label>Email</label><input type="email" placeholder="Enter your email" required>
+<label>Age</label><input type="number" min="10" max="25" required>
+<label>Booking Date</label><input type="date" required>
+<label>Select Course</label><select required><option value="">Choose Course</option><option>HTML</option><option>CSS</option><option>Programming</option></select>
+<p><b>Choose Shift:</b></p><div class="choice"><input type="radio" id="morning" name="shift" required><label for="morning">Morning</label><input type="radio" id="evening" name="shift"><label for="evening">Evening</label></div>
+<div class="check"><input type="checkbox" id="confirm" required><label for="confirm">I confirm my booking information</label></div>
+<label>Upload Student File</label><input type="file">
+<label>Notes</label><textarea rows="5" placeholder="Write your notes here"></textarea>
+<button type="submit">Book Now</button></form></div>
+<footer><p>© 2026 WE School - All Rights Reserved</p></footer></body></html>
