@@ -1,0 +1,98 @@
+:root {
+    --color-primary: #5e1245;
+    --color-on-primary: #ffffff;
+    --color-about-bg: #fdeec4;
+    --color-programming-bg: #d6e4fb;
+    --color-networking-bg: #fbd9dc;
+    --color-communication-bg: #d6f3e4;
+    --color-programming-title: #2f5fb3;
+    --color-networking-title: #c0392b;
+    --color-communication-title: #1e8a5a;
+    --color-about-title: #8a5a00;
+    --color-text: #333333;
+    --color-page-bg: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: var(--color-page-bg);
+    color: var(--color-text);
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    grid-column: 1 / -1;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    text-align: center;
+    padding: 14px;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.about {
+    grid-column: 1 / -1;
+    background-color: var(--color-about-bg);
+    padding: 12px 16px;
+}
+
+article {
+    padding: 12px 16px;
+    font-size: 0.85rem;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.about h2 {
+    color: var(--color-about-title);
+}
+
+.programming {
+    background-color: var(--color-programming-bg);
+}
+
+.networking {
+    background-color: var(--color-networking-bg);
+}
+
+.communication {
+    background-color: var(--color-communication-bg);
+}
+
+.programming h2 {
+    color: var(--color-programming-title);
+}
+
+.networking h2 {
+    color: var(--color-networking-title);
+}
+
+.communication h2 {
+    color: var(--color-communication-title);
+}
